@@ -79,7 +79,9 @@ nav ul.hide {
 
 h1 {
     display: flex;
-    font-size:  2.4rem;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    font-size:  2.2rem;
     color:  #0da4c3 ;
     text-align: center;
     
@@ -87,7 +89,7 @@ h1 {
 }
 header img {
     display: flex;
-    width: 10%;
+    width: 20%;
     height: auto;
     
 }
@@ -98,14 +100,15 @@ h2 {
 }
 header .subheading {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #a72170;
     
 }
 
 .weathersummary{
+    font-size: 1.6em;
     display: flex;
-    border:3px solid;
+    border: none;
     text-decoration-line: underline;
     background-color: aqua;
     flex-direction: row;
@@ -131,9 +134,9 @@ header .subheading {
 
 
 .franklinimage {
-    width:auto;
-    flex-shrink: 1
-    align-self: flex-start;
+    height: 100%;
+    width: 50%;
+    
     
     }
 
@@ -179,66 +182,9 @@ tr:nth-child(2n+3) {
     }
 
 
-tfoot {color:black;
 
-background-color: #7fb9c2;
-}
-
-table, th, td {
-    padding: 5px;
-    border: 1px solid black;
-    font-family: ubuntu, sans-serif;
-    
-    }
-    
- tfoot {
-     justify-content: center;}    
-    
-
-
-input,textarea {
-    float:right;
-    width:60%;
-}
-
-label {
-    float:left;
-    width:40%;
-    padding-top: 5px;
-}
-
-
-input:required ~ label:after,
-textarea:required ~ label:after{
-    content: " *";
-    color:#cc3f85;    
-}
-
-/* section styles */
-
-section.forecast {
-    display: none;
-}
-
-main article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 50%;
-    max-width: 300px;
-    margin-top: 1em;
-    padding-top: 0.8em;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-   /* fill the page in the small/phone view */
-}
-
-.flexbox1>img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 50%;
-    max-width: 500px;
-    padding-bottom: 0.8em;
-    display: flex;
-    margin: 0 auto;
-    
-   /* fill the page in the small/phone view */
+h3 {
+    text-align: center;
 }
 
 main article p.town-article, p.w-story {
@@ -257,71 +203,13 @@ footer {
     padding: 1em 0 1em 0;
 }
 
-main > .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em;
-    text-align: center;
-    padding-top: 1em; 
-}
 
-main p, article.info ul li {
-    font-family: Calibri, sans-serif;
-    color: #000000;
-    font-size: 0.8em;
-    text-align: left;
-}
 
-main section .container1 {
+#franklinevents {
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-main section .container1 img {   
-    width: 25%;
-    max-width: 250px;
-    flex-grow: 1;
-}
-
-main section .container1 > div {
-    flex-grow: 2;
-}
-
-main .current p {
-    text-transform: uppercase;
-}
-
-section.forecast {
-    display: none;
-}
-
-main article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 50%;
-    max-width: 300px;
-    margin-top: 1em;
-    padding-top: 0.8em;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-   /* fill the page in the small/phone view */
-}
-
-.flexbox1>img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 50%;
-    max-width: 500px;
-    padding-bottom: 0.8em;
-    display: flex;
-    margin: 0 auto;
+    background-color: grey;
     
-   /* fill the page in the small/phone view */
-}
-
-main article p.town-article, p.w-story {
-    padding: 0 1em 1em;
-    word-spacing: 0.2rem;
-    margin-bottom: 0;
 }
 
 /* Other Class Selectors */
